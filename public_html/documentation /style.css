@@ -3,5 +3,26 @@ body {
     color: white;
 }
 header {
-    color: limegreen;
+    color: black;
+    font-family: "Al Bayan";
+    border: .5em double lavender;
+    border-radius: 4em;
+    width: 25%;
+    text-align: center;
+    text-shadow: 5px 5px 10px white;
+
+}
+
+body {
+    font-family: monospace;
+
+}
+p {
+    color: black;
+    text-shadow: 5px 5px 10px white;
+}
+
+li {
+    color: black;
+    text-shadow: 5px 5px 10px white;
 }
