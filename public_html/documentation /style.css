@@ -3,13 +3,13 @@ body {
     color: white;
 }
 header {
-    color: black;
+    color: white;
     font-family: "Al Bayan";
     border: .5em double lavender;
     border-radius: 4em;
     width: 25%;
     text-align: center;
-    text-shadow: 5px 5px 10px white;
+    text-shadow: 5px 5px 10px black;
 
 }
 
@@ -18,11 +18,11 @@ body {
 
 }
 p {
-    color: black;
-    text-shadow: 5px 5px 10px white;
+    color: white;
+    text-shadow: 5px 5px 10px black;
 }
 
 li {
-    color: black;
-    text-shadow: 5px 5px 10px white;
+    color: white;
+    text-shadow: 5px 5px 10px black;
 }
