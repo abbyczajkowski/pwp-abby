@@ -20,16 +20,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Prints<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#section2">Prints<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Paintings</a>
+                <a class="nav-link" href="#section3">Paintings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Charcoals</a>
+                <a class="nav-link" href="#section4">Charcoals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Multimedia</a>
+                <a class="nav-link" href="#section5">Multimedia</a>
             </li>
         </ul>
     </div>
@@ -50,17 +50,116 @@
 <!--Navbar Links-->
 <div class="section one" id="section1">
     section 1
-    <img src="documentation/print.jpg" class="print" height="240" width="159"/></div>
+    <img src="documentation/print.jpg" class="print" height="1408" width="1209"/></div>
 <div class="section two" id="section2">
     section 2
-    <img src="documentation/paint-skull.jpg" class="acrylic-skull" height="270" width="285"/>
+    <img src="documentation/acrylic.jpg" class="acrylic-skull" height="1270" width="1285"/>
 </div>
 <div class="section three" id="section3">
     section 3
-    <img src="documentation/charcoal.jpg" class="charcoal" height="220" width="161"/></div>
+    <img src="documentation/skull-oil.jpg" class="oil" height="1161" width="1177" /></div>
 <div class="section four" id="section4">
     section 4
-    <img src="documentation/skull-oil.jpg" class="oil" height="161" width="177"/></div>
+    <img src="documentation/charcoal.jpg" class="charcoal" height="1220" width="1161"/></div>
+section 5
+<img src="documentation/multimedia.jpg" class="Multimedia" height="1161" width="1177"/></div>
+<div class="section five" id="section5">
+<!--contact form-->
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5"> If you would like a custom art piece please contact me.</p>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="text-center-align col-md-6">
+                            <div class="text-center-align md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Durango, CO</p>
+                    </li>
+
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+ 01 234 567 89</p>
+                    </li>
+
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>gkrart@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+    </section>
+    <!--Section: Contact v.2-->
 </body>
 </html>
 

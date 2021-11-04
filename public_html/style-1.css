@@ -22,3 +22,10 @@ h1 {
      text-align: center;
      color: black;
  }
+ .section {
+     align-content: space-evenly;
+     padding: 50px;
+ }
+ .section5 {
+align-content: space-evenly;
+ }
