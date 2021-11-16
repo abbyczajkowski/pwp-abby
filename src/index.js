@@ -58,7 +58,7 @@ const handlePostRequest = (request, response) => {
     mg.messages.create(process.env.MAILGUN_DOMAIN, mailgunData)
         .then(msg =>
         response.send(
-            `<div class='alert alert-success' role='alert' >${JSON.stringify(msg)}</div>`
+            `<div class='alert alert-success' role='alert' >Email Sent Successfully</div>`
         ))
         .catch(err =>
         response.send(

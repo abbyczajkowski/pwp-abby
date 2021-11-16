@@ -1,22 +1,23 @@
-$(document).ready(function (){
-    document.getElementById("contact")
-    $("#contact").validate({
+$(document).ready(function () {
+    $("#contact-form").validate({
         debug: true,
         errorClass: "alert alert-danger",
         ErrorLabelContainer: "#output-area",
         errorElement: "div",
+        // rules here define what is good or bad input
+        //each rule starts with the form input element's NAME attribute
         rules: {
-             name: {
+            name: {
                 required: true
             },
             email: {
                 email: true,
-                required: true
+                required: true,
             },
             message: {
                 required: true,
                 maxlength: 2000
-            }
+            },
         },
         messages: {
             name: {
@@ -24,27 +25,27 @@ $(document).ready(function (){
             },
             email: {
                 email: "Please provide a valid email",
-                required: "Email is required"
-            },
-            message: {
-                required: "A message is required",
-                maxlength: "Message must be 2000 characters or less"
+                required: "Email is a required field"
+            }, message: {
+                required: "Message is a required field",
+                maxlength: "Message is to long"
             }
-
         },
         submitHandler: (form) => {
-            $("#contact").ajaxSubmit({
+            $("#contact-form").ajaxSubmit({
                 type: "POST",
-                url: $("#contact").attr('action'),
+                url: $("#contact-form").attr('action'),
                 success: (ajaxOutput) => {
                     $("#output-area").css("display","")
-                    $("#output-area").html("ajaxOutput")
+                    $("#output-area").html(ajaxOutput)
 
-                    if($(".alert-success" >=1)){
-                        $("#contact")[0].reset()
+                    if($(".alert-success" >= 1)) {
+                        $("#contact-form")[0].reset()
                     }
+
                 }
             })
         }
+
     })
 })

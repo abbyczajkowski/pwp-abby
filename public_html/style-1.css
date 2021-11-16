@@ -26,9 +26,22 @@ h1 {
      align-content: space-evenly;
      padding: 50px;
  }
- .section5 {
-align-content: space-evenly;
-     border-image-width: 100px;
-     borer
+ img {
+     height: 975px;
+     width: 975px;
+     justify-content: center;
+     padding: 1.75em;
  }
 
+#contact {
+   align-items: center;
+}
+
+.about img{
+    height: 550px;
+    width: 601px;
+}
+.instagram {
+    text-align: center;
+    color: deeppink;
+}
