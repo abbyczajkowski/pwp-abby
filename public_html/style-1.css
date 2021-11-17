@@ -37,11 +37,13 @@ h1 {
    align-items: center;
 }
 
-.about img{
-    height: 550px;
-    width: 601px;
-}
+
 .instagram {
     text-align: center;
     color: deeppink;
+}
+
+.fa {
+    font-size: 2rem;
+
 }
